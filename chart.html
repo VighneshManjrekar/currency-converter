@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main" style="height: 280px;">
+        <nav id="main-nav">
+            <h1 id="main-nav-h1">Currency Converter</h1>
+            <ul id="nav-ul">
+                <li class="nav-li"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-li"><a class="nav-link" href="./chart.html">Live Rates</a></li>
+            </ul>
+        </nav>
+        <h1 id="chart-h1">
+            Indian Rupee Exchange Rates Table
+        </h1>
+        <span id="chart-h1-span">All figures are mid-market rates, which are not available to consumers and are for
+            informational purposes only.</span>
+        <br>
+        <table id="chart-table">
+        </table>
+        <br><br><br><br>
+</body>
+<script src="./js/http.js"></script>
+<script src="./js/table.js"></script>
+<script src="./js/data.js"></script>
+
+</html>

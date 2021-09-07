@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script>
+    <script src="./js/convert.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="main">
+        <nav id="main-nav">
+            <h1 id="main-nav-h1">Currency Converter</h1>
+            <ul id="nav-ul">
+                <li class="nav-li"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-li"><a class="nav-link" href="./chart.html">Live Rates</a></li>
+            </ul>
+        </nav>
+        <div id="converter">
+            <div id="input">
+                <input type="number" placeholder="Enter your amount..." id="input-amount">
+                <div id="convert-from"></div>
+                <div id="convert-to"></div>
+            </div>
+            <div id="result">
+                <p id="result-p-from"></p>
+                <p id="result-p-to"></p>
+                <span id="result-span"></span>
+            </div>
+            <button id="convert">CONVERT</button>
+        </div>
+        <div id="canvas-div">
+            <canvas id="myChart" style="position: relative;"></canvas>
+        </div>
+        <br><br><br>
+        <footer></footer>
+    </div>
+</body>
+<script src="./js/http.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/chart.js"></script>
+
+</html>
